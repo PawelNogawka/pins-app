@@ -9,3 +9,4 @@ The user can log in using Google, add pins, save and download pins, and add comm
 ![Zrzut ekranu z 2023-04-02 o 20 29 23](https://user-images.githubusercontent.com/108990517/229371999-870e6ed0-4fd3-4cdc-a067-bba12e9394e8.png)
 ![Zrzut ekranu z 2023-04-02 o 20 29 35](https://user-images.githubusercontent.com/108990517/229372047-dc8e406e-0dd1-4e23-ad5a-07fc4b4c20cd.png)
 ![Zrzut ekranu z 2023-04-02 o 20 29 15](https://user-images.githubusercontent.com/108990517/229372054-f4c55463-670e-41a2-877e-f11d9053e32f.png)
+![Zrzut ekranu z 2023-04-02 o 20 36 31](https://user-images.githubusercontent.com/108990517/229372158-3e2a2fe0-1f87-4aaf-997a-9b428797884e.png)
