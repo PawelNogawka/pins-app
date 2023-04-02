@@ -1,0 +1,23 @@
+$dark-text: #4d4d4d;
+$light-text: #777;
+$main: #f59946;
+$secondary:#384967;
+$error:rgb(220, 38, 38);
+$yellow:#F28A5A;
+$section-gray:#f8f8f8;
+
+
+//gradinet
+$main-gradient:linear-gradient(90deg, #FF883E 2.59%, #FD7121 92.62%);
+$backdrop-gradient:linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+
+
+// shadows
+
+$card-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);;
+$btn-shadow: 0 4px 12px 0 rgba(0,0,0,.1);
+$nav-shadow: 0 3px 15px rgba(0,0,0,.2);

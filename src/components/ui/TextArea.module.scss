@@ -1,0 +1,43 @@
+@import "../../variables";
+
+.area {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: 1rem;
+
+  textarea {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 0 0.1rem rgba(17, 46, 63, 0.5);
+    font-family: "Roboto", sans-serif;
+    color: $dark-text;
+    max-height: 20rem;
+    min-height: 8rem;
+    max-width: 90rem;
+    font-weight: 500;
+
+    &:focus {
+      outline: 0;
+      box-shadow: $main 0px 1px 1px, $main 0px 0px 0px 1px;
+    }
+
+    &::placeholder{
+      color:$dark-text;
+      font-weight: 500;
+    }
+  }
+
+
+  label {
+    color: $dark-text;
+    font-size: 1.6rem;
+  }
+
+  .error {
+    color: $error;
+    font-size: 1.4rem;
+  }
+}

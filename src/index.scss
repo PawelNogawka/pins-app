@@ -1,0 +1,137 @@
+@import "./src/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $dark-text;
+}
+
+h3 {
+  font-weight: 500;
+  color: $dark-text;
+}
+
+p {
+  color: $light-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+.main {
+  padding-top: 10rem;
+
+  &--smaller-padding {
+    padding-top: 8rem;
+  }
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: $main;
+  color: white;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  letter-spacing: 0.06rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  font-weight: 400;
+
+  &:hover {
+    background-color: #fff;
+    color: $main;
+    box-shadow: 0 0 0 0.1rem $main;
+  }
+
+  &--shadow {
+    box-shadow: $btn-shadow;
+  }
+
+  &--danger {
+    background-color: $error;
+  }
+
+  &--outlined {
+    background-color: white;
+    color: $main;
+    border: 0.1rem solid $main;
+    box-shadow: 0;
+
+    &:hover {
+      color: #fff;
+      background-color: $main;
+    }
+  }
+}
+
+.main-heading {
+  font-size: min(9vw, 4rem);
+  font-weight: 500;
+  color: $dark-text;
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.section-heading {
+  font-size: min(7vw, 3rem);
+  margin-bottom: 4rem;
+  color: $dark-text;
+}
+
+.section-padding {
+  padding: 3rem 0;
+}
+
+.gray-section {
+  background-color: $section-gray;
+}
+
+.no-result {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  color: $dark-text;
+  font-size: min(7vw, 4rem);
+}
+
+@media (max-width: 768px) {
+  .section__heading {
+    margin-bottom: 4rem;
+  }
+}

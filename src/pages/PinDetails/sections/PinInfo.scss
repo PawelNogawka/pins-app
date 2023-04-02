@@ -1,0 +1,66 @@
+@import "../../../variables";
+
+.pin-info {
+  padding-bottom: 4rem;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 6rem;
+  }
+
+  &__left {
+    flex: 1 1 25rem;
+    height: 55rem;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    box-shadow: $card-shadow;
+  }
+
+  &__right {
+    flex: 1 1 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+
+  &__about {
+    margin-top:.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 148%;
+  }
+
+  &__right-btns {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__desc {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 155%;
+  }
+  &__author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  &__author-name {
+    color: $dark-text;
+    font-size: 1.6rem;
+  }
+
+  &__time {
+    color: $dark-text;
+    font-size: 1.6rem;
+  }
+}

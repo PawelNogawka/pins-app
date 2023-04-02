@@ -1,0 +1,173 @@
+@import "../../variables";
+
+.create-pin-main {
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+}
+
+.create-pin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 7rem;
+
+  &__left {
+    flex: 1 1 25rem;
+    max-width: 55rem;
+    height: 50rem;
+    align-self: stretch;
+  }
+
+  &__added-img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__added-img {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4rem;
+  }
+
+  &__added-img-btn {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    color: $dark-text;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+  }
+
+  &__img-error {
+    margin-top: 1.3rem;
+    font-size: 1.6rem;
+    color: $error;
+  }
+
+  &__right {
+    flex: 1 1 55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    button {
+      align-self: start;
+    }
+  }
+
+  &__file-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 100%;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+
+  &__file-input {
+    width: 0;
+    height: 0;
+  }
+
+  &__file-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $dark-text;
+    gap: 0.4rem;
+
+    span {
+      font-size: 1.6rem;
+    }
+
+    svg {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__select-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__select-label {
+    color: $dark-text;
+    font-size: 1.6rem;
+  }
+
+  &__select-input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 0 0.1rem rgba(17, 46, 63, 0.5);
+    font-family: "Roboto", sans-serif;
+    color: $dark-text;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      color: $dark-text;
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: $main 0px 1px 1px, $main 0px 0px 0px 1px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__error {
+    margin-top: 0.4rem;
+    font-size: 1.6rem;
+    color: $error;
+  }
+}
+
+@media (min-width: 768px) {
+  .create-pin-main {
+    margin-top: 4rem;
+  }
+}
+
+@media(max-width:500px){
+  .create-pin{
+    &__left{
+      height: 30rem;
+    }
+  }
+}

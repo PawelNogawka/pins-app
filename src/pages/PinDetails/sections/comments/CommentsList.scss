@@ -1,0 +1,45 @@
+@import "../../../../variables";
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.comment {
+  &__author {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: space-between;
+  }
+
+  &__author-name {
+    font-size: 1.7rem;
+    color: $dark-text;
+  }
+  &__author-date {
+    font-size: 1.4rem;
+    color: $dark-text;
+  }
+
+  &__value {
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+    line-height: 150%;
+  }
+
+  &__delete-btn {
+    padding: 0.8rem;
+    color: $error;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+}
